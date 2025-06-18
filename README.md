@@ -1,12 +1,21 @@
-# React + Vite
+# 🌟 My Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website, crafted with **React**, **Tailwind CSS**, and **Framer Motion**. It's a storytelling-style showcase of my work as a developer, designer, writer, and student entrepreneur.
 
-Currently, two official plugins are available:
+## 🚀 Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite  
+- Tailwind CSS  
+- Framer Motion  
+- React Router
 
-## Expanding the ESLint configuration
+## 🎯 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Interactive, chapter-based layout  
+- Colorful and responsive design  
+- Smooth animations and transitions  
+- Contact section for collaboration
+
+---
+
+Thanks for stopping by! ✨
