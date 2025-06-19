@@ -19,3 +19,6 @@ This is my personal portfolio website, crafted with **React**, **Tailwind CSS**,
 ---
 
 Thanks for stopping by! ✨
+
+[Check out the live portfolio](https://portfolio-2hfpgrap1-muhsina419s-projects.vercel.app/)
+
