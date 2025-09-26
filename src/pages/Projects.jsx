@@ -4,10 +4,30 @@ import ProjectCard from "../components/ProjectCard";
 import DPollImg from "../assets/project1.png";
 import portfolioImg from "../assets/portfolio.png"; 
 import thirdProjectImg from "../assets/reflectify.png"; 
+import AccessibilityFinder from "../assets/accessibility.png"; 
+import SahachaariImg from "../assets/Sahachaari.png"
 
 const projects = [
   {
     id: 1,
+    title: "Sahachari",
+    image: SahachaariImg,
+    description:
+      "Sahachaari – Smart Traffic Control Assistant is an AI-powered, web-based platform designed to modernize and streamline urban traffic management.The project Won Special Mention Award at Kotech Hackathon 2025 ",
+    live: "https://starletproject.vercel.app/",
+    source: "https://github.com/muhsina419/Sahachaari",
+  },
+  {
+    id: 2,
+    title: "AccessibilityFinder",
+    image: AccessibilityFinder,
+    description:
+      " A comprehensive web application that helps users find and review accessible places for people with disabilities. Built with React, TypeScript, Tailwind CSS, and Firebase.This project Won first prize at Starlet 4.0 powered by Mind Empowered.",
+    live: "https://starletproject.vercel.app/",
+    source: "https://github.com/muhsina419/starletproject",
+  },
+  {
+    id: 3,
     title: "D-POLL – Decentralized Voting System",
     image: DPollImg,
     description:
@@ -16,7 +36,7 @@ const projects = [
     source: "https://github.com/muhsina419/DPOLL-agile-project-",
   },
   {
-    id: 2,
+    id: 4,
     title: "Personal Portfolio Website",
     image: portfolioImg,
     description:
@@ -25,7 +45,7 @@ const projects = [
     source: "https://github.com/yourusername/portfolio",
   },
   {
-    id: 3,
+    id: 5,
     title: "Reflectify – All-in-One Self Tracker",
     image: thirdProjectImg,
     description:

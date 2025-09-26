@@ -24,6 +24,24 @@ const educationData = [
 
 const experienceData = [
   {
+    role: "Creative and Content Team",
+    institution: "IEDC CUSAT",
+    duration: "2025 – Present",
+    description: "Handled Creative Contents over the social media platforms and help to reach more people.",
+  },
+  {
+    role: "Outreach Lead",
+    institution: "CodeSakhi",
+    duration: "2024 – Present",
+    description: "Led community events, workshops, and content strategy focused on empowering women in tech.",
+  },
+  {
+    role: "Project Intern",
+    institution: "The Nexus Project",
+    duration: "June 2024",
+    description: "Worked on designing and developing Canteen App - contributing to backend by writting efficient API using FASTAPI.",
+  },
+  {
     role: "Python Developer Intern",
     institution: "Rootsys International",
     duration: "May 2024 – June 2024",
@@ -32,7 +50,7 @@ const experienceData = [
   {
     role: "Outreach Lead",
     institution: "Tinkerhub DCS CUSAT",
-    duration: "2023 – Present",
+    duration: "2023 – 2024",
     description: "Led community events, workshops, and content strategy focused on building student tech culture.",
   },
 ];
