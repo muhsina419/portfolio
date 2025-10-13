@@ -6,8 +6,17 @@ import portfolioImg from "../assets/portfolio.png";
 import thirdProjectImg from "../assets/reflectify.png"; 
 import AccessibilityFinder from "../assets/accessibility.png"; 
 import SahachaariImg from "../assets/Sahachaari.png"
-
+import ResQWay from "../assets/ResQWay.png"
 const projects = [
+  {
+    id: 1,
+    title: "ResQway",
+    image: ResQWay,
+    description:
+      "ResQWay is a smart web-based emergency response platform that connects citizens, ambulances, hospitals, and volunteers in real time. It enables quick emergency reporting, live location sharing, and faster coordination to ensure help reaches the right place at the right time — the right way. ",
+    live: "",
+    source: "https://github.com/muhsina419/ResQWay",
+  },
   {
     id: 1,
     title: "Sahachari",
