@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import image1 from '../assets/1.JPG';
-import image2 from '../assets/7.jpg';
+import image2 from '../assets/starlet.jpeg';
 import image3 from '../assets/3.jpg';
 import image4 from '../assets/4.JPG';
-import image5 from '../assets/5.jpg'
+import image5 from '../assets/5.jpg';
+import image6 from '../assets/merit day.jpg';
 
 const images = [
   image4,
@@ -11,6 +12,7 @@ const images = [
   image1,
   image5,
   image2,
+  image6,
 ]
 
 export default function Home() {
