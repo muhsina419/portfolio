@@ -22,19 +22,8 @@ const educationData = [
   },
 ];
 
-const experienceData = [
-  {
-    role: "Creative and Content Team",
-    institution: "IEDC CUSAT",
-    duration: "2025 – Present",
-    description: "Handled Creative Contents over the social media platforms and help to reach more people.",
-  },
-  {
-    role: "Outreach Lead",
-    institution: "CodeSakhi",
-    duration: "2024 – Present",
-    description: "Led community events, workshops, and content strategy focused on empowering women in tech.",
-  },
+// professional experiences (internships)
+const professionalExperienceData = [
   {
     role: "Project Intern",
     institution: "The Nexus Project",
@@ -46,6 +35,28 @@ const experienceData = [
     institution: "Rootsys International",
     duration: "May 2024 – June 2024",
     description: "Worked on designing and developing responsive web interfaces using React, TailwindCSS, and Framer Motion.",
+  },
+];
+
+// extra‑curricular activities and community roles
+const extracurricularData = [
+  {
+    role: "Organizer",
+    institution: "Make-A-Ton 8.0",
+    duration: "2026 - Feb",
+    description: "Part of Content and Tech team - designed and developed official website, writing content, handling dm's etc..",
+  },
+  {
+    role: "Creative and Content Team",
+    institution: "IEDC CUSAT",
+    duration: "2025 – Present",
+    description: "Handled Creative Contents over the social media platforms and help to reach more people.",
+  },
+  {
+    role: "Outreach Lead",
+    institution: "CodeSakhi",
+    duration: "2024 – Present",
+    description: "Led community events, workshops, and content strategy focused on empowering women in tech.",
   },
   {
     role: "Outreach Lead",
@@ -83,10 +94,10 @@ export default function EducationExperienceSection() {
 </motion.p>
 
       
-      <div className="relative flex flex-col md:flex-row gap-12 w-full max-w-6xl mx-auto items-start justify-center">
-        <div className="flex-1 flex flex-col items-center md:items-start">
+      <div className="relative flex flex-col gap-12 w-full max-w-6xl mx-auto items-start justify-center">
+        <div className="w-full flex flex-col items-center md:items-start">
           <h3 className="text-2xl font-bold mb-6 text-cyan-400 irish-grover-regular text-center md:text-left">Education 🎓</h3>
-          <div className="flex flex-col gap-10 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
             {educationData.map((edu, index) => (
               <EducationCard
                 key={`edu-${index}`}
@@ -101,21 +112,46 @@ export default function EducationExperienceSection() {
             "Not just degrees. But defining moments"
           </p>
         </div>
-        {/* Vertical Divider */}
-        <div className="md:block h-full w-px bg-gray-600 mx-8"></div>
-        {/* Experience Section */}
-        <div className="flex-1 flex flex-col items-center md:items-start">
+
+        {/* Horizontal Divider */}
+        <div className="w-full h-px bg-gray-600 my-8"></div>
+
+        {/* Experience Section (always below education) */}
+        <div className="w-full flex flex-col items-center md:items-start">
           <h3 className="text-2xl font-bold mb-6 text-pink-400 irish-grover-regular text-center md:text-left">Experience 💻</h3>
-          <div className="flex flex-col gap-10 w-full">
-            {experienceData.map((exp, index) => (
-              <EducationCard
-                key={`exp-${index}`}
-                degree={exp.role}
-                institution={exp.institution}
-                year={exp.duration}
-                description={exp.description}
-              />
-            ))}
+          <div className="flex flex-col gap-8 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {professionalExperienceData.map((exp, index) => (
+                <EducationCard
+                  key={`prof-${index}`}
+                  degree={exp.role}
+                  institution={exp.institution}
+                  year={exp.duration}
+                  description={exp.description}
+                />
+              ))}
+            </div>
+            {/* <div>
+              <p className="text-2xl nanum-pen-script-regular text-pink-500 mt-4  items-center justify-center">
+              "Not just degrees. But defining moments"
+              </p>
+            </div> */}
+
+            <div className="w-full h-px bg-gray-600 my-8"></div>
+
+
+            <h3 className="text-2xl font-bold mb-6 text-pink-400 irish-grover-regular text-center md:text-left">Extra-curricular Activities 💻</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {extracurricularData.map((exp, index) => (
+                <EducationCard
+                  key={`extra-${index}`}
+                  degree={exp.role}
+                  institution={exp.institution}
+                  year={exp.duration}
+                  description={exp.description}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

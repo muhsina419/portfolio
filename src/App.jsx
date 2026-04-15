@@ -6,6 +6,7 @@ import Skills from './pages/Skills';
 import EducationExperienceSection from './pages/EducationExperience';
 import Projects from './pages/Projects';
 import LetsConnect from './pages/LetsConnect';
+import Achievements from './pages/Achievements';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div id="education"><EducationExperienceSection /></div>
       <div id="skills"><Skills /></div>
       <div id="projects"><Projects /></div>
+      <div id="achievements"><Achievements /></div>
       <div id="connect"><LetsConnect /></div>
     </Router>
   );

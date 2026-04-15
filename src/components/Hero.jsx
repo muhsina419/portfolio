@@ -78,8 +78,8 @@ export default function Home() {
       </div>
 
       {/* Headline */}
-      <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800">
-        👋 Hey There, I’m Muhsina.
+      <h1 className="irish-grover-regular text-8xl md:text-5xl font-bold text-center  text-gray-800">
+         Hey There, I’m Muhsina.
       </h1>
 
       <p className=" mt-4 text-3xl md:text-xl text-center text-grey-600 max-w-3xl just-me-again-down-here-regular">

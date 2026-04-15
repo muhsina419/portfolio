@@ -7,6 +7,7 @@ const navLinks = [
   { label: "THE MAKING OF ME", to: "#education" },
   { label: "WHAT I LEARNED", to: "#skills" },
   { label: "WHAT I BUILT", to: "#projects" },
+  { label: "WINNINGS ALONG THE WAY", to: "#achievements"},
   { label: "LETS CONNECT", to: "#connect" },
 ];
 
