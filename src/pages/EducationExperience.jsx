@@ -76,7 +76,8 @@ export default function EducationExperienceSection() {
 <motion.h2
   className="text-4xl md:text-6xl font-bold irish-grover-regular mb-1 bg-gradient-to-r from-[#288DB5] to-[#FF6F91] bg-clip-text text-transparent drop-shadow-lg text-center"
   initial={{ opacity: 0, y: -30 }}
-  animate={{ opacity: 1, y: 0 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.5 }}
   transition={{ duration: 1 }}
 >
   THE MAKING OF ME
@@ -86,7 +87,8 @@ export default function EducationExperienceSection() {
 <motion.p
   className="text-2xl bg-gradient-to-r from-[#288DB5] to-[#FF6F91] bg-clip-text text-transparent drop-shadow text-center just-me-again-down-here-regular mb-16"
   initial={{ opacity: 0, y: -10 }}
-  animate={{ opacity: 1, y: 0 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.5 }}
   transition={{ duration: 1, delay: 0.3 }}
 >
   Every step added something new to the mix — the journey from classroom corners to the real-world 
@@ -105,6 +107,7 @@ export default function EducationExperienceSection() {
                 institution={edu.institution}
                 year={edu.year}
                 description={edu.description}
+                index={index}
               />
             ))}
           </div>
@@ -128,6 +131,7 @@ export default function EducationExperienceSection() {
                   institution={exp.institution}
                   year={exp.duration}
                   description={exp.description}
+                  index={index}
                 />
               ))}
             </div>
@@ -149,6 +153,7 @@ export default function EducationExperienceSection() {
                   institution={exp.institution}
                   year={exp.duration}
                   description={exp.description}
+                  index={index}
                 />
               ))}
             </div>

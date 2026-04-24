@@ -1,5 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from './components/Navbar';
+import SplashCursor from './components/SplashCursor';
 import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
@@ -11,6 +12,7 @@ import Achievements from './pages/Achievements';
 function App() {
   return (
     <Router>
+      <SplashCursor />
       <Navbar />
       <div id="home"><Home /></div>
       <div id="about"><About /></div>

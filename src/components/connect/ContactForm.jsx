@@ -18,7 +18,17 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
+    
+    const mailtoLink = `mailto:muhsinamohammedkutty2003@gmail.com?subject=${encodeURIComponent(
+      formData.subject || "Message from Portfolio"
+    )}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`
+
+    window.location.href = mailtoLink
+    
+    // Clear form after submission
+    setFormData({ name: "", email: "", subject: "", message: "" })
   }
 
   return (

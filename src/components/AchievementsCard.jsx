@@ -17,14 +17,28 @@ const categoryColors = {
   recognition: "from-[#8b5cf6] to-[#a78bfa]",
 };
 
-const AchievementCard = ({ achievement, index }) => {
+const AchievementCard = ({ achievement, index = 0 }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      whileHover={{ scale: 1.03, y: -5 }}
       transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-      className="achievement-card rounded-2xl p-6 flex flex-col gap-4"
+      className="achievement-card rounded-3xl p-6 flex flex-col gap-4 bg-gradient-to-br from-white/60 to-white/30 backdrop-blur-md shadow-lg border border-white hover:shadow-2xl transition-all duration-300 w-full max-w-xl"
     >
+      {/* Image Placeholder */}
+      <div className="w-full h-40 bg-white/50 rounded-xl overflow-hidden flex items-center justify-center border-2 border-dashed border-pink-300 mb-2">
+        {achievement.image ? (
+          <img src={achievement.image} alt={achievement.title} className="w-full h-full object-cover" />
+        ) : (
+          <div className="text-gray-500 text-sm font-medium flex flex-col items-center justify-center just-me-again-down-here-regular text-2xl">
+            <span className="text-4xl mb-2 opacity-80">📸</span>
+            Achievement Photo
+          </div>
+        )}
+      </div>
+
       <div className="flex items-start gap-4">
         <div
           className={`w-14 h-14 rounded-xl bg-gradient-to-br ${categoryColors[achievement.category]} flex items-center justify-center text-white shrink-0 shadow-lg`}

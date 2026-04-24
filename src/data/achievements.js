@@ -1,5 +1,8 @@
 // sample data for achievements
 // you can add more entries as needed
+import starletImage from '../assets/starletprize.jpeg';
+import image5 from '../assets/5.jpg';
+import image7 from '../assets/7.jpg';
 
 /**
  * @typedef {{
@@ -10,6 +13,7 @@
  *   category: string;
  *   icon: string;
  *   date: string;
+ *   image: string;
  * }} Achievement
  */
 
@@ -22,6 +26,7 @@ export const achievements = [
     description: "Won first place among 200 teams for building an inclusive Accessibility Finder platform for physically handicapped persons",
     category: "competition",
     icon: "trophy",
+    image: starletImage,
   },
   {
     id: 2,
@@ -30,6 +35,7 @@ export const achievements = [
     description: "Got a notable mention on building an smart traffic control and maintaining platform for kottakkal city",
     category: "recognition",
     icon: "trophy",
+    image: image5,
   },
   {
     id: 3,
@@ -38,6 +44,6 @@ export const achievements = [
     description: "Recognized for outstanding contributions to build an website that is useful in emergency medical conditions",
     category: "competetion",
     icon: "trophy",
+    image: image7,
   },
 ];
-
